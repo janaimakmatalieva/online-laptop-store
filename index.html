@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+
+    <header>
+        Online Store
+    </header>
+
+    <main>
+        <aside class="sidebar">
+            <button class="cartOpenBtn">cart</button>
+            <button class="filterBtn" data-brand="APPLE">APPLE</button>
+            <button class="filterBtn" data-brand="ACER">ACER</button>
+            <button class="filterBtn" data-brand="ALL">all</button>
+        </aside>
+        <section class="mainSection">
+            <h1>Товары</h1>
+            <div class="row">
+                
+            </div>
+        </section>
+    </main>
+
+    <div class="cartModal cartModalHidden">
+        <div class="cartModalContent">
+            <div class="cartModalHeader">
+                <h1>Cart</h1>
+                <button class="cartCloseBtn">close</button>
+            </div>
+            <div class="cartModalBody"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/requests.js"></script>
+</body>
+</html> 

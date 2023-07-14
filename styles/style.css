@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    position: relative;
+}
+
+header {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 36px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.sidebar {
+  border: 1px solid;
+  height: calc(100vh - 150px);
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar button {
+  padding: 20px 40px;
+}
+
+.row, .cartModalBody {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card img {
+  max-width: 100%;
+}
+
+.cartModal {
+    width: 100vw;
+    height: 100vh;
+    border: 1px solid;
+    background-color: rgb(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.cartModalContent{
+    width: 80vw;
+    height: 80vh;
+    border: 2px solid;
+    background-color: antiquewhite;
+    padding: 20px;
+}
+
+.cartModalHeader{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.cartModalHeader button, .cartModalHeader h1{ 
+    justify-self: end;
+}
+
+.cartModalHidden{
+    display: none;
+}
+
+.cartModalActive{
+    display: block;
+}
+
+
